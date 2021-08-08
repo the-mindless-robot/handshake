@@ -1,3 +1,23 @@
+// simple XML request that returns a promise
+// accepts a request object
+/*
+  const request = {
+                url: url, // url to get
+                method: type, // POST, GET, etc.  defaults to GET
+                data: data // stringified data object (optional)
+            }
+ */
+
+// use
+/*
+const response = await Handshake.send(request);
+ or
+Handshake.send(request).then(response => {
+    ...do stuff
+})
+*/
+
+
 class Handshake {
     static send(request) {
         return new Promise((resolve, reject) => {
