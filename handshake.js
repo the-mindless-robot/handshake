@@ -33,7 +33,7 @@ class Handshake {
                     }
                 }
             };
-            if (request.method === 'POST') {
+            if (request.data) {
                 xhr.send(request.data);
             } else {
                 xhr.send();
